@@ -1,0 +1,78 @@
+<WorkSpace_Data WSVersID="Badger_3">
+  <ACDBFile_Paths>
+    <ACDBFile_Paths path="Bluetooth_cal.acdb" />
+    <ACDBFile_Paths path="General_cal.acdb" />
+    <ACDBFile_Paths path="Global_cal.acdb" />
+    <ACDBFile_Paths path="Handset_cal.acdb" />
+    <ACDBFile_Paths path="Hdmi_cal.acdb" />
+    <ACDBFile_Paths path="Headset_cal.acdb" />
+    <ACDBFile_Paths path="Speaker_cal.acdb" />
+  </ACDBFile_Paths>
+  <GUI_Data />
+  <OpenDSP MajorMinor="1_0">
+    <AREA_LIST>
+      <AREA name="VOICE_COPP_RX" type="RX">
+        <TOPOLOGY name="VOICE_RX_NGATE" ID="0x0100C300" type="RX" NewAdded="true">
+          <Block name="RX_VOICE_SPKR_GAIN" dataView_ID="0x00000018" ID="0x00010EF9" type="RX" />
+          <Block name="RX_VOICE_MBDRC" dataView_ID="0x00000007" ID="0x00010EE6" type="RX" />
+          <Block name="RX_VOICE_HPF" dataView_ID="0x00000037" ID="0x00010F12" type="RX" />
+          <Block name="RX_VOICE_PBE" dataView_ID="0x00000006" ID="0x00010EE5" type="RX" />
+          <Block name="RX_VOICE_DEC_GAIN" dataView_ID="0x00000018" ID="0x00010EFA" type="RX" />
+          <Block name="RX_VOICE_ECRX" dataView_ID="0x0000000B" ID="0x00010EED" type="RX" />
+          <Block name="RX_VOICE_AVC_RVE" dataView_ID="0x00000005" ID="0x00010EE4" type="RX" gain_dependant="No" />
+          <Block name="RX_VOICE_VOL" dataView_ID="0x00000054" ID="0x00010EF5" type="RX" volumeModule="true" gain_dependant="Yes" />
+          <Block name="RX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE8" type="RX" gain_dependant="Yes" />
+          <Block name="RX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EEA" type="RX" gain_dependant="Yes" />
+          <Block name="RX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010EFF" type="RX" gain_dependant="Yes" />
+          <Block name="RX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF2" type="RX" gain_dependant="Yes" />
+          <Block name="RX_VOICE_WV" dataView_ID="0x00000003" ID="0x00010EE2" type="RX" />
+          <Block name="RX_VOICE_FNS" dataView_ID="0x00000009" ID="0x00010EEB" type="RX" />
+          <Block name="VOICE_MODULE_NGATE_RX" ID="0x0100C100" type="RX" NewAdded="true" dataView_ID="0xFFFF0001" />
+        </TOPOLOGY>
+      </AREA>
+    </AREA_LIST>
+    <TOPOLOGY_LIST>
+      <TOPOLOGY name="VOICE_RX_NGATE" ID="0x0100C300" type="RX" NewAdded="true">
+        <Block name="RX_VOICE_SPKR_GAIN" dataView_ID="0x00000018" ID="0x00010EF9" type="RX" />
+        <Block name="RX_VOICE_MBDRC" dataView_ID="0x00000007" ID="0x00010EE6" type="RX" />
+        <Block name="RX_VOICE_HPF" dataView_ID="0x00000037" ID="0x00010F12" type="RX" />
+        <Block name="RX_VOICE_PBE" dataView_ID="0x00000006" ID="0x00010EE5" type="RX" />
+        <Block name="RX_VOICE_DEC_GAIN" dataView_ID="0x00000018" ID="0x00010EFA" type="RX" />
+        <Block name="RX_VOICE_ECRX" dataView_ID="0x0000000B" ID="0x00010EED" type="RX" />
+        <Block name="RX_VOICE_AVC_RVE" dataView_ID="0x00000005" ID="0x00010EE4" type="RX" />
+        <Block name="RX_VOICE_VOL" dataView_ID="0x00000054" ID="0x00010EF5" type="RX" volumeModule="true" />
+        <Block name="RX_VOICE_IIR" dataView_ID="0x0000004E" ID="0x00010EE8" type="RX" />
+        <Block name="RX_VOICE_FIR" dataView_ID="0x00000021" ID="0x00010EEA" type="RX" />
+        <Block name="RX_VOICE_AIG" dataView_ID="0x0000000E" ID="0x00010EFF" type="RX" />
+        <Block name="RX_VOICE_DRC" dataView_ID="0x0000001E" ID="0x00010EF2" type="RX" />
+        <Block name="RX_VOICE_WV" dataView_ID="0x00000003" ID="0x00010EE2" type="RX" />
+        <Block name="RX_VOICE_FNS" dataView_ID="0x00000009" ID="0x00010EEB" type="RX" />
+        <Block name="VOICE_MODULE_NGATE_RX" ID="0x0100C100" type="RX" NewAdded="true" dataView_ID="0xFFFF0001" />
+      </TOPOLOGY>
+    </TOPOLOGY_LIST>
+    <BLOCK_LIST>
+      <Block name="VOICE_MODULE_NGATE_RX" ID="0x0100C100" type="RX" NewAdded="true" dataView_ID="0xFFFF0001" />
+    </BLOCK_LIST>
+    <AB_VIEW_LIST>
+      <AB_VIEW dataView_ID="0xFFFF0001" name="VOICE_MODULE_NGATE_RX" NewAdded="true">
+        <DATA_VIEW name="Data" display="true">
+          <INTERFACE I_id="0x00010E00" />
+          <INTERFACE I_id="0x0100C000" />
+          <INTERFACE I_id="0x0100C001" />
+        </DATA_VIEW>
+      </AB_VIEW>
+    </AB_VIEW_LIST>
+    <INTERFACE_LIST>
+      <INTERFACE name="VOICE_PARAM_NGATE_RX_TUNING" I_id="0x0100C000" hexStr="410000002D000500" NewAdded="true" maxSize="8">
+        <CONFIG_ELEMENT name="Attack" type="int16" min="0x1" max="0x64" />
+        <CONFIG_ELEMENT name="Release" type="int16" min="0x0" max="0x64" />
+        <CONFIG_ELEMENT name="Threshold" type="int16" min="0x0" max="0xC8" />
+        <CONFIG_ELEMENT name="time_smoothing" type="int16" min="0x1" max="0xA" />
+      </INTERFACE>
+      <INTERFACE name="VOICE_PARAM_NGATE_RX_GAIN" I_id="0x0100C001" hexStr="00000000" NewAdded="true" maxSize="4">
+        <CONFIG_ELEMENT name="ngate_gain" type="int16" min="0x0" max="0x1" />
+        <CONFIG_ELEMENT name="reserved" type="uint16" min="0x0" max="0xFFFF" />
+      </INTERFACE>
+    </INTERFACE_LIST>
+  </OpenDSP>
+</WorkSpace_Data>
